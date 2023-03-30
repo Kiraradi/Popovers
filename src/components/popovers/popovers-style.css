@@ -1,0 +1,61 @@
+
+.button {
+    padding: 10px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popover-button {
+    visibility: hidden;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 200px;
+    width: 100%;
+    position: absolute;
+    flex-wrap: wrap;
+}
+
+.popover-button__title {
+    padding: 5px;
+    background-color: #bbb9b9;
+    width: 100%;
+}
+
+.popover-button__content {
+    padding: 5px;
+}
+
+.popover-button:before, 
+.popover-button:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.popover-button:before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 16px solid black;
+    right: 90px;
+    bottom: -16px;
+    z-index: 1;
+}
+
+.popover-button:after {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 13px solid white;
+    right: 92px;
+    bottom: -12px;
+    z-index: 2;
+}
+
+.visibility {
+    visibility: visible;
+}
