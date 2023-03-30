@@ -13,6 +13,5 @@ describe("Page start", () => {
     });
   });
 
-  test("test", async () => {
-  });
+  test("testE2E", () => {});
 });
