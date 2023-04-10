@@ -1,6 +1,6 @@
 import "./popovers-style.css";
 
-// Класс принимает 3 аргуманта:
+// Класс принимает 4 аргуманта:
 // container - куда будет вставлятся элемент
 // buttonText - текст кнопки
 // buttonPopoverTitle - Заголовок всплывашки
@@ -16,6 +16,18 @@ export default class Popovers {
     this.buttonText = buttonText;
     this.buttonPopoverTitle = buttonPopoverTitle;
     this.buttonPopoverContent = buttonPopoverContent;
+  }
+
+  static get markup() {
+    return `
+    <div class="button-wraper">
+      <button class="button">Кнопочка</button>
+      <div class="popover-button" style="top: 15px; left: 27.6875px;">
+        <div class="popover-button__title">Всплывашка для кнопочки</div>
+        <div class="popover-button__content">Очено много текта для кнопочки</div>
+      </div>
+    </div>
+    `;
   }
 
   drawUi() {
